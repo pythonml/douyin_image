@@ -8,7 +8,7 @@ setup(
     author_email='shenzhongqiang@msn.com',
     url='https://github.com/pythonml/douyin',
     packages=setuptools.find_packages(),
-    install_requires=['pillow', 'numpy', 'matplotlib'],
+    install_requires=['Pillow>=5.1.0', 'numpy==1.14.4'],
     classifiers=(
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",

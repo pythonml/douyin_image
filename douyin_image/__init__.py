@@ -12,7 +12,7 @@ def main():
         parser.error("please specify --text or --image")
 
     out = args.out if args.out is not None else "out.jpeg"
-    if len(args.text) > 0:
+    if args.text:
         text_to_img(args.text, out)
     if args.image:
         add_effect(args.image, out)

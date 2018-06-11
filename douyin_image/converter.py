@@ -1,6 +1,5 @@
 from PIL import Image, ImageDraw, ImageFont
 import numpy as np
-import matplotlib.pyplot as plt
 
 def add_effect(filepath, outpath):
     img_orig = Image.open(filepath)
@@ -26,12 +25,13 @@ def add_effect(filepath, outpath):
 
 def text_to_img(txt, outpath):
     fnt = ImageFont.truetype('/Library/Fonts/Tahoma Bold.ttf', 100)
-    text1 = Image.new("RGBA", (300, 200), color=(0, 0, 0, 255))
-    text2 = Image.new("RGBA", (300, 200), color=(0, 0, 0, 255))
-    textdraw1 = ImageDraw.ImageDraw(text1, "RGBA")
-    textdraw2 = ImageDraw.ImageDraw(text2, "RGBA")
-    textdraw1.text((23, 23), txt, font=fnt, fill=(255, 0, 0, 230))
-    textdraw2.text((18, 18), txt, font=fnt, fill=(0, 255, 255, 230))
+    width = len(txt) * 65
+    text1 = Image.new("RGB", (width, 180), color=(0, 0, 0))
+    text2 = Image.new("RGB", (width, 180), color=(0, 0, 0))
+    textdraw1 = ImageDraw.ImageDraw(text1, "RGB")
+    textdraw2 = ImageDraw.ImageDraw(text2, "RGB")
+    textdraw1.text((23, 23), txt, font=fnt, fill=(255, 0, 0))
+    textdraw2.text((18, 18), txt, font=fnt, fill=(0, 255, 255))
     array1 = np.array(text1)
     array2 = np.array(text2)
     result_array = array1 + array2
