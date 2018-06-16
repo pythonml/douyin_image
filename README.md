@@ -1,27 +1,26 @@
 # douyin_image [![Version][version-badge]][version-link] ![MIT License][license-badge]
 
 
-Add douyin effect to text or image
+Add douyin effect to image
 
 
-`douyin_image` 是一个将Python代码转换成图片的工具
+`douyin_image` 是一个给图片添加抖音效果的库
 
 
 ### 示例
 
 转换后的代码图片
 
-![](https://raw.githubusercontent.com/pythonml/douyin_image/master//code.png)
+![](https://raw.githubusercontent.com/pythonml/douyin_image/master/douyin_image/out.jpeg)
 
 
 ### 使用方式
 
 ```
-usage: codeshot [-h] [--text TEXT] [--image IMAGEFILE] [--out OUTIMAGE]
+usage: douyin_image [-h] [--image IMAGEFILE] [--out OUTIMAGE]
 
 optional arguments:
   -h, --help         show this help message and exit
-  --text TEXT        text to add effect
   --image IMAGEFILE  path of image to add effect
   --out OUTIMAGE     path of output image
 ```
