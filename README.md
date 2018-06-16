@@ -11,7 +11,7 @@ Add douyin effect to image
 
 转换后的代码图片
 
-![](https://raw.githubusercontent.com/pythonml/douyin_image/master/douyin_image/out.jpeg)
+![](https://raw.githubusercontent.com/pythonml/douyin_image/master/out.jpeg)
 
 
 ### 使用方式
