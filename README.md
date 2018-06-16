@@ -9,6 +9,10 @@ Add douyin effect to image
 
 ### 示例
 
+原图
+
+![](https://raw.githubusercontent.com/pythonml/douyin_image/master/orig.jpeg)
+
 转换后的代码图片
 
 ![](https://raw.githubusercontent.com/pythonml/douyin_image/master/out.jpeg)
